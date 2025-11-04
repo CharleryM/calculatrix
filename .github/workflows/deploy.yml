@@ -1,7 +1,6 @@
 name: CI/CD
 
-on:
-  push:
+on: [push]
 
 jobs:
   install:
@@ -76,6 +75,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
+    needs: [test, lint]
     if: success()
 
     steps:
