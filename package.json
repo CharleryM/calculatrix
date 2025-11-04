@@ -2,10 +2,10 @@
 "name": "calculatrice-node",
 "version": "1.0.0",
 "description": "Petite application web de calculatrice (Node + Express)",
-"main": "main.js",
+"main": "server.js",
 "scripts": {
-"start": "node main.js",
-"dev": "nodemon main.js"
+"start": "node server.js",
+"dev": "nodemon server.js"
 },
 "dependencies": {
 "express": "^4.18.2",
