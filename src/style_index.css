@@ -1,0 +1,45 @@
+:root{
+font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+body{
+display:flex;
+align-items:center;
+justify-content:center;
+height:100vh;
+margin:0;
+background:#f4f4f8;
+}
+.calculator{
+width:320px;
+background:white;
+padding:16px;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+.display{
+height:56px;
+background:#111;
+color:#fff;
+border-radius:8px;
+padding:8px 12px;
+font-size:24px;
+display:flex;
+align-items:center;
+justify-content:flex-end;
+margin-bottom:12px;
+}
+.keys{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:8px;
+}
+.keys button{
+padding:14px;
+border-radius:8px;
+border:0;
+font-size:18px;
+background:#f0f0f4;
+}
+.keys button[data-op]{
+background:#ffd166;
+}
